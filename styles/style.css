@@ -1,0 +1,226 @@
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: #121212;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+::selection {
+    background-color: rgb(190, 5, 5);
+    color: #fff;
+}
+
+#loading {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#loadingtext {
+    font-size: 50px;
+    color: red;
+    text-shadow: rgba(255,0,0,0.8) 0px 0px 28px; 
+    animation: loading 1s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+}
+
+@keyframes loading {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.3);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+#content {
+    width: 100%;
+    height: 100vh;
+    opacity: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: 135px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.firstbox {
+    margin-left: 50px;
+}
+
+.secondbox {
+    margin-right: 50px;
+}
+
+.firstbox h1 {
+    font-size: 7rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.firstbox h3 {
+    margin-bottom: 50px;
+    margin-top: 50px;
+    font-size: 3.5rem;
+    display: inline-block;
+    padding-right: 2px;
+    border-right: 2px solid red;
+    white-space: nowrap;
+}
+
+.firstbox p {
+    font-size: 1.5rem;
+    font-weight: 1.8;
+    max-width: 1000px;
+    line-height: 40px;
+}
+
+.image {
+    background: url("/img/profile.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    box-shadow: 0 0 25px red;
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+}
+
+.image:hover{
+    box-shadow: 0 0 25px red,
+                0 0 50px red;
+}
+
+span {
+    color: red;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    border-radius: 4rem;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    transition: 0.1s ease-in-out;
+    cursor: pointer;
+    background-color: #121212;
+    color: red;
+    border: 3px solid red;
+    box-shadow:  0 0 25px transparent;
+    margin-top: 50px;
+}
+
+.btn:hover{
+    box-shadow: 0 0 25px red;
+}
+
+@media (max-width:1834px) {
+    .firstbox h1 {
+        font-size: 5rem;
+    }
+
+    .firstbox h3 {
+        font-size: 2.5rem;
+    }
+
+    .firstbox p {
+        max-width: 800px;
+    }
+}
+
+@media (max-width:1630px) {
+    .image {
+        width: 400px;
+        height: 400px;
+    }
+
+    .firstbox p {
+        max-width: 700px;
+        line-height: 32px;
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width:1322px) {
+    #content {
+        flex-direction: column-reverse;
+    }
+
+    .firstbox, .secondbox {
+        margin: 0;
+    }
+
+    #content {
+        gap: 80px;
+    }
+
+    .firstbox {
+        margin: 0px 50px 0px 50px;
+    }
+}
+
+@media (max-width:800px) {
+    .firstbox h1 {
+        font-size: 3rem;
+    }
+
+    .firstbox h3 {
+        font-size: 1.7rem;
+    }
+
+    .firstbox p {
+        font-size: 1rem;
+        max-width: 500px;
+        font-family: 600;
+    }
+
+    .image {
+        width: 300px;
+        height: 300px;
+    }
+
+    #content {
+        gap: 110px;
+    }
+
+    .firstbox .btn {
+        font-size: 0.7rem;
+        font-weight: 700;
+        padding: 0.8rem 2.8rem;
+    }
+}
+
+
+@media (max-width:500px) {
+    .firstbox h1 {
+        font-size: 2.2rem;
+    }
+
+    .firstbox h3 {
+        font-size: 1.2rem;
+    }
+
+    .firstbox p {
+        font-size: 0.8rem;
+        font-weight: 500;
+        line-height: 26px;
+    }
+
+    .image {
+        width: 220px;
+        height: 220px;
+    }
+}
