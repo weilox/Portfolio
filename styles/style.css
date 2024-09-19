@@ -188,6 +188,8 @@ span {
     }
 
     .firstbox h3 {
+        margin-top: 30px;
+        margin-bottom: 30px;
         font-size: 1.7rem;
     }
 
@@ -210,6 +212,7 @@ span {
         font-size: 0.7rem;
         font-weight: 700;
         padding: 0.8rem 2.8rem;
+        margin-top: 30px;
     }
 }
 
@@ -224,6 +227,8 @@ span {
     }
 
     .firstbox h3 {
+        margin-bottom: 30px;
+        margin-top: 30px;
         font-size: 1.2rem;
     }
 
@@ -239,11 +244,6 @@ span {
     }
 
     .btn {
-        margin-top: 40px;
-    }
-
-    .firstbox h3 {
-        margin-top: 40px;
-        margin-bottom: 40px;
+        margin-top: 30px;
     }
 }
