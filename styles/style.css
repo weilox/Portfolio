@@ -159,6 +159,11 @@ span {
         flex-direction: column-reverse;
     }
 
+    body {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
     .firstbox, .secondbox {
         margin: 0;
     }
@@ -173,6 +178,11 @@ span {
 }
 
 @media (max-width:800px) {
+    body {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
     .firstbox h1 {
         font-size: 3rem;
     }
@@ -193,7 +203,7 @@ span {
     }
 
     #content {
-        gap: 110px;
+        gap: 80px;
     }
 
     .firstbox .btn {
@@ -205,6 +215,10 @@ span {
 
 
 @media (max-width:500px) {
+    body {
+        margin:0;
+    }
+
     .firstbox h1 {
         font-size: 2.2rem;
     }
@@ -222,5 +236,14 @@ span {
     .image {
         width: 220px;
         height: 220px;
+    }
+
+    .btn {
+        margin-top: 40px;
+    }
+
+    .firstbox h3 {
+        margin-top: 40px;
+        margin-bottom: 40px;
     }
 }
