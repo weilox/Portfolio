@@ -86,7 +86,7 @@ body {
 }
 
 .image {
-    background: url("/img/profile.jpg");
+    background: url("../img/profile.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
